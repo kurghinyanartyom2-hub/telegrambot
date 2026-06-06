@@ -2,6 +2,10 @@ import os
 import asyncio
 from dotenv import load_dotenv
 
+
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
+
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import (
     ApplicationBuilder,
